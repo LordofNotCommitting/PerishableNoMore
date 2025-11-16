@@ -30,10 +30,12 @@ namespace PerishableNoMore
                     ItemExpireRecord record = Data.ItemExpire.GetRecord(basePickupItem.Id, true);
                     if (expireComponent != null && record != null)
                     {
+                        expireComponent.IsStarted = true;
                         expireComponent.ExpireDate = gameDate.AddHours((double)record.ExpiresAfterHours);
                     }
                     else if (expireComponent != null)
                     {
+                        expireComponent.IsStarted = false;
                         expireComponent.ExpireDate = gameDate.AddHours((double)10000.0);
                     }
                 }
