@@ -11,7 +11,8 @@ If you want to get the product of perishable item, you need to turn mod off via 
 
 Have MCM option to turn it on or off just so people can get antibiotics. (still requires restart)
 
-Comment for v1.1: So due to datetime related shinanigans. sorting can break with invalid time.**(it will not sort and instead destroy items that were suppose to go to other tabs)** And god knows what else. I don't even know if it is caused by my mod since I don't touch expiration dates. But since it is possible that old items from the past may cause an issue. If you are having this (sortwill not sort and instead destroy items that were suppose to go to other tabs) issue then I have created "unbreak item" button which will reset all expire date to default value which should resolve the issue. (still requires restart, will also undo the frozen duration item effect)
+Comment for v1.1: I have created "unbreak item" button which will reset all expire date to default value which should resolve the issue. (still requires restart, will also undo the frozen duration item effect)
+I have confirmed that sort related issue had nothing to do with this mod, but it is good to have an option to undo freezing.
 
 Have it on for a 1 in game hour ->save and exit -> and turn it off. one instance of it being active reset expiration date of all cargo items.
 
