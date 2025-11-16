@@ -16,6 +16,8 @@ namespace PerishableNoMore
             this.ModData = new ModConfigData(ConfigPath);
             this.ModData.AddConfigHeader("STRING:General Settings", "general");
             this.ModData.AddConfigValue("general", "Enable_Mod", false, "STRING:Enable Mod", "STRING:If you enable this, any item reaching its expiration date will become non-perishable.\n");
+            this.ModData.AddConfigValue("general", "Unbreak_Now", false, "STRING:Unbreak Broken Items", "STRING:Refresh all expiration date to maximum in case spacetime issue breaks sorting.\n");
+            
             this.ModData.AddConfigValue("general", "about2", "STRING:<color=#f51b1b>The game must be restarted after setting then saving this config to take effect.</color>\n");
             this.ModData.RegisterModConfigData(ModName);
         }

@@ -78,6 +78,7 @@ namespace PerishableNoMore
             Plugin.ConfigGeneral = new ModConfigGeneral("Permanant Perishables", Plugin.ConfigPath);
             Plugin.Save = new ModSave(Plugin.SavePath);
             new Harmony("LoC_" + Plugin.ModAssemblyName).PatchAll();
+
         }
     }
 }
