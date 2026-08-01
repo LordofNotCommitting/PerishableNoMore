@@ -15,9 +15,12 @@ namespace PerishableNoMore
             this.ModName = ModName;
             this.ModData = new ModConfigData(ConfigPath);
             this.ModData.AddConfigHeader("STRING:General Settings", "general");
-            this.ModData.AddConfigValue("general", "Enable_Mod", false, "STRING:Enable Mod", "STRING:If you enable this, any item reaching its expiration date will become non-perishable.\n");
-            this.ModData.AddConfigValue("general", "Unbreak_Now", false, "STRING:Unbreak Broken Items", "STRING:Refresh all expiration date to maximum in case spacetime issue breaks sorting.\n");
-            
+            this.ModData.AddConfigValue("general", "requires_freezer_upgrade", false, "STRING:Only works with Fridge researched.", "STRING:Turn this off to make the mod work regardless of Magnum upgrade status.");
+            //this.ModData.AddConfigValue("general", "apply_freezer_during_mission", true, "STRING:Apply Freezing during mission", "STRING:Expiration timer will not tick down for time spent on mission with this option on.");
+            this.ModData.AddConfigValue("general", "apply_freezer_to_everything", true, "STRING:Apply Freezer effect to everything", "STRING:This put freezer effect on everything. <color=#f51b1b>Overrides any setup below.</color>");
+            this.ModData.AddConfigValue("general", "apply_freezer_to_shipcargo", false, "STRING:Apply Freezer effect to ship cargo", "STRING:This will apply freezer effect, on ship cargo only.");
+            this.ModData.AddConfigValue("general", "apply_freezer_to_vest", false, "STRING:Apply Freezer effect to vest", "STRING:This will apply freezer effect, on ship cargo only.");
+            this.ModData.AddConfigValue("general", "apply_freezer_to_backpack", false, "STRING:Apply Freezer effect to backpack", "STRING:This will apply freezer effect, on backpack only.");
             this.ModData.AddConfigValue("general", "about2", "STRING:<color=#f51b1b>The game must be restarted after setting then saving this config to take effect.</color>\n");
             this.ModData.RegisterModConfigData(ModName);
         }

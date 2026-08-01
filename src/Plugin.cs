@@ -11,11 +11,14 @@ using UnityEngine;
 
 namespace PerishableNoMore
 {
-    
 
+    
 
     public static class Plugin
     {
+
+        public static ShuttleCargoDepartment curr_PUBG_dept { get; set; }
+
         // Token: 0x1700000A RID: 10
         // (get) Token: 0x06000042 RID: 66 RVA: 0x000032EA File Offset: 0x000014EA
         public static string ModAssemblyName

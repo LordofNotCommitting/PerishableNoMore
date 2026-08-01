@@ -101,7 +101,6 @@ namespace PerishableNoMore
                 {
                     return fallback;
                 }
-                return fallback;
             }
             return fallback;
         }
@@ -138,7 +137,6 @@ namespace PerishableNoMore
                     }
                     return fallback;
                 }
-                return fallback;
             }
             return fallback;
         }
